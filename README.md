@@ -64,3 +64,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## EXAMPLE
+
+POST : http://127.0.0.1:8000/api/sunday
+payload 
+start_date:04/12/2023
+end_date:03/12/2026
+endpoint : /api/sunday
+
+image : https://prnt.sc/K9cURAzMUCga
+
+here's the curl command
+curl --location 'http://127.0.0.1:8000/api/sunday' \
+--header 'Content-type: application/json' \
+--form 'start_date="04/12/2023"' \
+--form 'end_date="03/12/2026"'
